@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:clickable="true"
+    android:id="@+id/root"
+    android:layout_height="match_parent" android:background="@color/beijingse">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_to_fragment"
+        android:text="返回"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="训练计划"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:padding="10dp"/>
+
+    <View
+        android:layout_below="@+id/back_to_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/fengexian"
+        android:background="#7f7f7f"/>
+</RelativeLayout>

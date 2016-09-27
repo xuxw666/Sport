@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:orientation="horizontal" android:background="#ffffff">
+    <LinearLayout
+        style="@style/bottom_bar"
+        android:id="@+id/bottom_bar_paobu">
+        <ImageView
+            style="@style/bottom_bar_image"
+            android:id="@+id/bottom_bar_image_paobu"
+            android:src="@drawable/icon_selected_paobu"/>
+        <TextView
+            style="@style/bottom_bar_text"
+            android:text="跑步"
+            android:textColor="@color/selected_textColor"
+            android:id="@+id/bottom_bar_text_paobu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bottom_bar"
+        android:id="@+id/bottom_bar_quanzi">
+        <ImageView
+            style="@style/bottom_bar_image"
+            android:id="@+id/bottom_bar_image_quanzi"
+            android:src="@drawable/icon_nomal_quanzi"/>
+        <TextView
+            style="@style/bottom_bar_text"
+            android:text="圈子"
+            android:textColor="@color/normal_textColor"
+            android:id="@+id/bottom_bar_text_quanzi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bottom_bar"
+        android:id="@+id/bottom_bar_xiaoxi">
+        <ImageView
+            style="@style/bottom_bar_image"
+            android:id="@+id/bottom_bar_image_xiaoxi"
+            android:src="@drawable/icon_nomal_xiaozhitiao"/>
+        <TextView
+            style="@style/bottom_bar_text"
+            android:text="消息"
+            android:textColor="@color/normal_textColor"
+            android:id="@+id/bottom_bar_text_xiaoxi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bottom_bar"
+        android:id="@+id/bottom_bar_geren">
+        <ImageView
+            style="@style/bottom_bar_image"
+            android:id="@+id/bottom_bar_image_geren"
+            android:src="@drawable/icon_nomal_geren"/>
+        <TextView
+            style="@style/bottom_bar_text"
+            android:text="个人"
+            android:textColor="@color/normal_textColor"
+            android:id="@+id/bottom_bar_text_geren"/>
+    </LinearLayout>
+
+</LinearLayout>

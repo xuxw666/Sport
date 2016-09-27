@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="selected_textColor">#36ab60</color>
+    <color name="normal_textColor">#8a8a8a</color>
+    <color name="chengse">#ff7e00</color>
+    <color name="beijingse">#f7f7f7</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:clickable="true" android:background="#ffffff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_to_fragment"
+        android:text="返回"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_main_content"
+        android:layout_below="@+id/back_to_fragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/yonghu"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="用户名"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="："
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:password="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/yonghu"
+            android:id="@+id/mima"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="密码"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="："
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:password="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@+id/mima"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
