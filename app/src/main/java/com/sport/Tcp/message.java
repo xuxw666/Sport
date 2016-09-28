@@ -6,10 +6,13 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class message implements Serializable {
+
 	public static Calendar calendar = Calendar.getInstance();
+
 	private String username = null;
 	private String message = null;
 	private String time = null;
+
 	public message(String username,String message){
 		this.username = username;
 		this.message = message;
@@ -23,6 +26,6 @@ public class message implements Serializable {
 	}
 	
 	public String toString(){
-		return username+","+time+"\r"+"message："+message;
+		return username+","+time+"\n"+"message："+message;
 	}
 }

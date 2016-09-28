@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-        <RelativeLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -25,7 +25,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/message_background"/>
-        </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content_message"
+                android:text="xxw\n"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </FrameLayout>
     </com.sport.fragment.view.mineScrollView>
 
     <LinearLayout
@@ -49,8 +56,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:id="@+id/current_message"
             android:background="@drawable/edit_text_onfocus"/>
         <Button
+            android:id="@+id/send_message"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:text="发送"

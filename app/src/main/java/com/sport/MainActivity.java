@@ -9,7 +9,7 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sport.Tcp.chatTo;
+import com.sport.Tcp.online;
 import com.sport.fragment.MainContentMainFragmentGeren;
 import com.sport.fragment.MainContentMainFragmentPaobu;
 import com.sport.fragment.MainContentMainFragmentQuanzi;
@@ -55,7 +55,14 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Gallery paobu_select_date;
 
     private void setDefault(){
-        paobu_select_date = (Gallery)findViewById(R.id.paobu_select_date);
+//        paobu_select_date = (Gallery)findViewById(R.id.paobu_select_date);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                online.start();
+            }
+        }).start();
 
         LogUtil.debug(this.getClass(), "获取当前组件");
     }
@@ -141,7 +148,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 //                Thread a = new Thread(new Runnable() {
 //                    @Override
 //                    public void run() {
-//                        new chatTo();
+//                        new online();
 //                    }
 //                });
 //                a.start();
