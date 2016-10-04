@@ -58,7 +58,7 @@
             <TextView
                 android:id="@+id/mubiao"
                 style="@style/geren_4zhibiao"
-                android:text="8000步"
+                android:text="9000步"
                 android:layout_weight="1"/>
             <TextView
                 style="@style/geren_4zhibiao"
