@@ -16,12 +16,14 @@ public class online {
     private static DataInputStream dataInputStream = null;
     private static ObjectOutputStream dataToServer = null;
     private static Socket socket = null ;
+    private static String address = "192.168.0.100";
+    private static int port = 9527;
 
     public static void start(){
 
         try {
 
-            socket = new Socket("192.168.0.100",9527);
+            socket = new Socket(address,port);
             Thread a = new Thread(new Receive());
             a.start();
 //            Thread b = new Thread(new Send());

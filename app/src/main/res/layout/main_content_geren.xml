@@ -77,35 +77,108 @@
         android:layout_height="400dp"
         android:orientation="vertical"
         android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/shujufenxi"
-            style="@style/geren_4zhibiao.xuanxiang"
-            android:text="数据图表分析"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/shujufenxi"
+                style="@style/geren_4zhibiao.xuanxiang"
+                android:text="数据图表分析"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/goin"/>
+        </LinearLayout>
         <View
             style="@style/wodexiahuaxian"/>
-        <TextView
-            android:id="@+id/tizhongguanli"
-            style="@style/geren_4zhibiao.xuanxiang"
-            android:text="体重管理"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tizhongguanli"
+                style="@style/geren_4zhibiao.xuanxiang"
+                android:text="体重管理"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/goin"/>
+
+        </LinearLayout>
+
         <View
             style="@style/wodexiahuaxian"/>
-        <TextView
-            android:id="@+id/xunlianjihua"
-            style="@style/geren_4zhibiao.xuanxiang"
-            android:text="训练计划"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/xunlianjihua"
+                style="@style/geren_4zhibiao.xuanxiang"
+                android:text="训练计划"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/goin"/>
+
+        </LinearLayout>
+
         <View
             style="@style/wodexiahuaxian"/>
-        <TextView
-            android:id="@+id/chengjiuqiang"
-            style="@style/geren_4zhibiao.xuanxiang"
-            android:text="成就墙"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/chengjiuqiang"
+                style="@style/geren_4zhibiao.xuanxiang"
+                android:text="成就墙"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/goin"/>
+
+        </LinearLayout>
+
         <View
             style="@style/wodexiahuaxian"/>
-        <TextView
-            android:id="@+id/shezhi"
-            style="@style/geren_4zhibiao.xuanxiang"
-            android:text="设置"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/shezhi"
+                style="@style/geren_4zhibiao.xuanxiang"
+                android:text="设置"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/goin"/>
+
+        </LinearLayout>
         <View
             style="@style/wodexiahuaxian"/>
+
     </LinearLayout>
+
 </LinearLayout>
